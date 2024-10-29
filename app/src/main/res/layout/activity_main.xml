@@ -10,7 +10,7 @@
     android:padding="20dp">
 
     <LinearLayout
-        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -25,6 +25,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/input_gasoline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -38,7 +39,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -53,6 +54,7 @@
             android:textStyle="bold"/>
 
         <EditText
+            android:id="@+id/input_ethanol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -72,21 +74,21 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/text_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#31e"/>
+            android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:text="Qual a melhor opção?" />
+            android:text="@string/button_text"/>
 
     </LinearLayout>
-
 
 </LinearLayout>
