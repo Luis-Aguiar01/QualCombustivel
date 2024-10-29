@@ -6,4 +6,5 @@
     <string name="result_ethanol">Abasteça com Etanol.</string>
     <string name="button_text">Qual a melhor opção?</string>
     <string name="title_app">Descubra o melhor preço!</string>
+    <string name="error_message">Por favor, preencha os dois campos.</string>
 </resources>

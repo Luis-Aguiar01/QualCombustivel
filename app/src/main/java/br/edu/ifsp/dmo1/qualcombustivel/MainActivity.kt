@@ -6,6 +6,7 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -33,7 +34,11 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     @Override
     override fun onClick(view: View) {
         if (view == buttonCalc) {
-            showResult()
+            if (checkInputValues()) {
+                showResult()
+            } else {
+                showErrorMessage()
+            }
         }
     }
 
@@ -51,6 +56,13 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         }
     }
 
+    private fun showErrorMessage() {
+        Toast.makeText(
+            this, getString(R.string.error_message), Toast.LENGTH_SHORT).show()
+    }
+
     private fun getInputValueConverted(view: EditText) = view.text.toString().toDouble()
 
+    private fun checkInputValues() = inputEthanol.text.isNotEmpty() &&
+            inputGasoline.text.isNotEmpty()
 }
