@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">¿Qué combustible?</string>
+    <string name="gasoline_text">Precio por litro de gasolina:</string>
+    <string name="ethanol_text">Precio por litro de etanol:</string>
+    <string name="result_gasoline">Abastece con Gasolina.</string>
+    <string name="result_ethanol">Abastece con Etanol.</string>
+    <string name="button_text">¿Cuál es la mejor opción?</string>
+    <string name="title_app">¡Descubre el mejor precio!</string>
+    <string name="error_message">Por favor, completa ambos campos.</string>
+    <string name="error_invalid_number">Valor inválido.</string>
+</resources>

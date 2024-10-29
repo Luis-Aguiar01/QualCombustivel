@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         if (proportion > 0.70) {
             textResult.text = getString(R.string.result_gasoline)
             textResult.setTextColor(getColor(R.color.gasoline))
-        } else  {
+        } else {
             textResult.text = getString(R.string.result_ethanol)
             textResult.setTextColor(getColor(R.color.ethanol))
         }
@@ -61,7 +61,14 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             this, getString(R.string.error_message), Toast.LENGTH_SHORT).show()
     }
 
-    private fun getInputValueConverted(view: EditText) = view.text.toString().toDouble()
+    private fun getInputValueConverted(view: EditText) =
+        try {
+            view.text.toString().toDouble()
+        }
+        catch (e: NumberFormatException) {
+             Toast.makeText(this, getString(R.string.error_invalid_number), Toast.LENGTH_SHORT).show()
+             0.0
+        }
 
     private fun checkInputValues() = inputEthanol.text.isNotEmpty() &&
             inputGasoline.text.isNotEmpty()

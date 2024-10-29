@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Which Fuel</string>
+    <string name="gasoline_text">Price per liter of gasoline:</string>
+    <string name="ethanol_text">Price per liter of ethanol:</string>
+    <string name="result_gasoline">Fill up with Gasoline.</string>
+    <string name="result_ethanol">Fill up with Ethanol.</string>
+    <string name="button_text">What is the best option?</string>
+    <string name="title_app">Find the Best Price!</string>
+    <string name="error_message">Please fill in both fields.</string>
+    <string name="error_invalid_number">Invalid value.</string>
+</resources>
