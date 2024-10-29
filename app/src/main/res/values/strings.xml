@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Qual combustível</string>
+    <string name="gasoline_text">Valor do litro de gasolina:</string>
+    <string name="ethanol_text">Valor do litro de etanol:</string>
+    <string name="result_gasoline">Abasteça com Gasolina</string>
+    <string name="result_ethanol">Abasteça com Etanol</string>
+    <string name="button_text">Qual a melhor opção?</string>
+</resources>
